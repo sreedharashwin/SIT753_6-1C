@@ -6,7 +6,7 @@ def factorial(n):
         return n * factorial(n - 1)
 
 # Predefined number
-number = 4
+number = 5
 
 # Calculate factorial
 result = factorial(number)
