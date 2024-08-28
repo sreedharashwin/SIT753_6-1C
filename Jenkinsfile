@@ -6,7 +6,7 @@ stages {
             steps {
                 script {
                     echo "Stage 1: Build - Using Maven to compile and package the code."
-                    // Example: sh 'mvn clean install'
+                    echo "Tool: Maven'
                 }
             }
         }
@@ -15,7 +15,7 @@ stages {
             steps {
                 script {
                     echo "Stage 2: Unit and Integration Tests - Running tests using JUnit and Maven."
-                    // Example: sh 'mvn test'
+                    echo "Tools: JUnit and SureFire"
                 }
             }
             post {
@@ -39,7 +39,7 @@ stages {
             steps {
                 script {
                     echo "Stage 3: Code Analysis - Analyzing code with SonarQube."
-                    // Example: sh 'mvn sonar:sonar'
+                    echo "Tool: SonarQube"
                 }
             }
         }
@@ -48,7 +48,7 @@ stages {
             steps {
                 script {
                     echo "Stage 4: Security Scan - Performing security scan with OWASP Dependency-Check."
-                    // Example: sh 'dependency-check.sh --project myApp --scan ./'
+                    echo "Tool: OWASP ASST (Automated Software Security Toolkit)"
                 }
             }
             post {
@@ -72,7 +72,7 @@ stages {
             steps {
                 script {
                     echo "Stage 5: Deploy to Staging - Deploying to AWS EC2 instance."
-                    // Example: sh 'scp target/myapp.jar ec2-user@staging-instance:/path/to/deploy'
+                    echo 'Tool: AWS CLI'
                 }
             }
         }
@@ -81,7 +81,7 @@ stages {
             steps {
                 script {
                     echo "Stage 6: Integration Tests on Staging - Running tests in the staging environment."
-                    // Example: sh 'mvn verify -Pstaging'
+                    echo "Tools: Mockit and Junit"
                 }
             }
         }
@@ -90,7 +90,7 @@ stages {
             steps {
                 script {
                     echo "Stage 7: Deploy to Production - Deploying to production server."
-                    // Example: sh 'scp target/myapp.jar ec2-user@production-instance:/path/to/deploy'
+                    echo "Tool: Ansible"
                 }
             }
         }
