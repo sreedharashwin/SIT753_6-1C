@@ -6,7 +6,7 @@ stages {
             steps {
                 script {
                     echo "Stage 1: Build - Using Maven to compile and package the code."
-                    echo "Tool: Maven'
+                    echo "Tool: Maven"
                 }
             }
         }
@@ -72,7 +72,7 @@ stages {
             steps {
                 script {
                     echo "Stage 5: Deploy to Staging - Deploying to AWS EC2 instance."
-                    echo 'Tool: AWS CLI'
+                    echo "Tool: AWS CLI"
                 }
             }
         }
